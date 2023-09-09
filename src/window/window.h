@@ -38,11 +38,11 @@ void Window_RenderDisplay(struct EmulatorWindow *window, struct RAM *ram);
 
 void Window_ListenEvents(struct EmulatorWindow *window, struct CPU *cpu);
 
+void Window_Close(struct EmulatorWindow *window);
+
 void Window_LoadAudio(struct EmulatorWindow *window);
 
 void Window_AudioCallback(struct EmulatorWindow *window, Uint8* stream, int len);
-
-void Window_Close(struct EmulatorWindow *window);
 
 uint8_t Window_DecodeKeyPad(uint16_t scancode);
 
