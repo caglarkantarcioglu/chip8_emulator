@@ -85,38 +85,23 @@ void Window_ListenEvents(struct EmulatorWindow *window, struct CPU *cpu) {
 
 uint8_t Window_DecodeKeyPad(uint16_t scancode) {
     switch (scancode) {
-        case 0x1E: // 1
-            return 0x1;
-        case 0x1F: // 2
-            return 0x2;
-        case 0x20: // 3
-            return 0x3;
-        case 0x21: // 4
-            return 0xC;
-        case 0x14: // q
-            return 0x4;
-        case 0x1A: // w
-            return 0x5;
-        case 0x15: // r
-            return 0xD;
-        case 0x08: // e
-            return 0x6;
-        case 0x09: // f
-            return 0xE;
-        case 0x04: // a
-            return 0x7;
-        case 0x16: // s
-            return 0x8;
-        case 0x07: // d
-            return 0x9;
-        case 0x1D: // z
-            return 0xA;
-        case 0x1B: // x
-            return 0x0;
-        case 0x06: // c
-            return 0xB;
-        case 0x19: // v
-            return 0xF;
+        case 0x1E: return 0x1; // 1
+        case 0x1F: return 0x2; // 2
+        case 0x20: return 0x3; // 3
+        case 0x21: return 0xC; // 4
+        case 0x14: return 0x4; // q
+        case 0x1A: return 0x5; // w
+        case 0x15:return 0xD; // r
+        case 0x08: return 0x6; // e
+        case 0x09: return 0xE; // f
+        case 0x04: return 0x7; // a
+        case 0x16: return 0x8; // s
+        case 0x07: return 0x9; // d
+        case 0x1D: return 0xA; // z
+        case 0x1B: return 0x0; // x
+        case 0x06: return 0xB; // c
+        case 0x19: return 0xF; // v
+        default: break;
     }
 
     return 0xFF;
